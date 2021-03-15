@@ -1,0 +1,4 @@
+{
+    "browsers": ["safari"],
+    "src": "page_model/test/*.js"
+}

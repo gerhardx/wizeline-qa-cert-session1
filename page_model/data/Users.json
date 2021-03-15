@@ -1,0 +1,37 @@
+[
+    {
+        "case": "Login with a valid user",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expectedResult": "Products",
+        "shouldLogin": true
+    },
+    {
+        "case": "Can't login with invalid user",
+        "username": "user",
+        "password": "bad_password",
+        "expectedResult": "Thank you, Olivia Peyton!",
+        "shouldLogin": false
+    },
+    {
+        "case": "Login with a valid user but locked out",
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "expectedResult": "Thank you, Olivia Peyton!",
+        "shouldLogin": false
+    },
+    {
+        "case": "Login with a valid user / problem user",
+        "username": "problem_user",
+        "password": "secret_sauce",
+        "expectedResult": "Products",
+        "shouldLogin": true
+    },
+    {
+        "case": "Login with a valid user Glitch Problem",
+        "username": "performance_glitch_user",
+        "password": "secret_sauce",
+        "expectedResult": "Products",
+        "shouldLogin": true
+    }
+]

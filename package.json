@@ -1,0 +1,15 @@
+{
+  "name": "wizeline-qa-assesment-session-1",
+  "version": "1.0.0",
+  "description": "Assesment session 1 for QA certification",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe",
+    "test-auth": "testcafe --fixture-meta type=auth"
+  },
+  "author": "gerardo alvarez muñoz",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
