@@ -62,6 +62,7 @@ A config file **`.testcaferc.json`** is included. Edit the next keys to change b
 
 - On cart/checkout functionality, testing when user removes items from the cart is recommended.
 - There are users with long login response. Need spec to detect performance issues
+- Dotenv file, it was added as dependecy, but not created as credentials are public for assignment.  
 
 
 ## Authors
