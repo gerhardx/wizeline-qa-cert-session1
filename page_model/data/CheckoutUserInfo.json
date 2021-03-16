@@ -1,0 +1,14 @@
+[
+    {
+        "case": "Type user first name",
+        "value": "Gerard"
+    },
+    {
+        "case": "Type user last name",
+        "value": "AM"
+    },
+    {
+        "case": "Type zip code",
+        "value": "12345"
+    }
+]

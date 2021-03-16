@@ -6,7 +6,8 @@
   "scripts": {
     "test": "testcafe",
     "test-auth": "testcafe --fixture-meta type=auth",
-    "test-cart": "testcafe --fixture-meta type=cart"
+    "test-cart": "testcafe --fixture-meta type=cart",
+    "test-info": "testcafe --fixture-meta type=info"
   },
   "author": "gerardo alvarez muñoz",
   "license": "ISC",
