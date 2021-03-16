@@ -1,10 +1,9 @@
 import { Selector, t } from 'testcafe';
 
-class OverviewPage {
+class FinishPage {
     constructor(){
         this.title = Selector('.subheader');
-        this.checkoutButton = Selector('.cart_button');
     }
 }
 
-export default new OverviewPage();
+export default new FinishPage();

@@ -26,14 +26,13 @@ test("Add multiple item to shopping cart", async t => {
     await t
         .useRole(validUser);
 
-    const totalProducts = await InventoryPage.addTocartButton.count;
-    const products = await InventoryPage.addTocartButton;
+    const totalItems = await InventoryPage.addTocartButton.count;
+    const items = await InventoryPage.addTocartButton;
 
-    for(let i = 0; i < totalProducts; i++) {
+    for(let i = 0; i < totalItems; i++) {
         await t
-            .useRole(validUser)
-            .click(products.nth(i))
+            .click(items.nth(i))
             .expect(InventoryPage.shoppingCartBadge.innerText).eql(i+1+'',{timeout: 1000});
-    }
+    };
     
 });
