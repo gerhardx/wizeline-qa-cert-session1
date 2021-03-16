@@ -1,0 +1,30 @@
+ Running tests in:
+ - Safari 14.1 / macOS 10.15.7
+
+ Shopping cart Tests
+ ✓ User navigates to shopping cart
+ ✓ Add single item to shopping cart
+ ✓ Add multiple item to shopping cart
+
+ Checkout Tests
+ ✓ Validate added items
+ ✓ Place order
+
+ Login Tests
+ ✓ Login with a valid user
+ ✓ Can't login with invalid user
+ ✓ Login with a valid user but locked out
+ ✓ Login with a valid user / problem user
+ ✓ Login with a valid user Glitch Problem
+
+ Log out Tests
+ ✓ Log out
+
+ Checkout info
+ ✓ Shows error message on missing first name
+ ✓ Shows error message on missing last name
+ ✓ Shows error message on missing zip
+ ✓ Navigates to overview
+
+
+ 15 passed (15s)

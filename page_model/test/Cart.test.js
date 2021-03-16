@@ -29,6 +29,9 @@ test("Add multiple item to shopping cart", async t => {
     const totalItems = await InventoryPage.addTocartButton.count;
     const items = await InventoryPage.addTocartButton;
 
+    //Add all items to cart
+    //TODO: Handle case when items are removed from cart
+
     for(let i = 0; i < totalItems; i++) {
         await t
             .click(items.nth(i))

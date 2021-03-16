@@ -1,5 +1,5 @@
 {
-    "browsers": ["safari"],
+    "browsers": ["chrome"],
     "src": "page_model/test/*.js",
-    "concurrency": 1
+    "concurrency": 3
 }

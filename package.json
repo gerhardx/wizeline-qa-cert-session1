@@ -4,11 +4,11 @@
   "description": "Assesment session 1 for QA certification",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe",
-    "test-auth": "testcafe --fixture-meta type=auth",
-    "test-cart": "testcafe --fixture-meta type=cart",
-    "test-info": "testcafe --fixture-meta type=info",
-    "test-checkout": "testcafe --fixture-meta type=checkout"
+    "test": "testcafe -r spec:page_model/report/all.txt",
+    "test-auth": "testcafe --fixture-meta type=auth -r spec:page_model/report/auth.txt",
+    "test-cart": "testcafe --fixture-meta type=cart -r spec:page_model/report/cart.txt",
+    "test-info": "testcafe --fixture-meta type=info -r spec:page_model/report/info.txt",
+    "test-checkout": "testcafe --fixture-meta type=checkout -r spec:page_model/report/checkout.txt"
   },
   "author": "gerardo alvarez muñoz",
   "license": "ISC",

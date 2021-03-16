@@ -15,7 +15,7 @@ fixture('Checkout Tests')
             .useRole(validUser);
     });
 
-test.only("Validate added items", async t => {
+test("Validate added items", async t => {
     const totalItems = await InventoryPage.item.count;
     const items = await InventoryPage.item;
 
@@ -23,6 +23,7 @@ test.only("Validate added items", async t => {
 
     for(let i = 0; i < totalItems; i++) {
 
+        //Select Random items
         let random = Math.floor(Math.random() * totalItems);
 
         if(await items.child('.pricebar').child('.btn_inventory').nth(random).innerText == "ADD TO CART"){
@@ -30,6 +31,7 @@ test.only("Validate added items", async t => {
             await t
                 .click(items.child('.pricebar').child('.btn_inventory').nth(random));
         };
+        //TODO: Handle case when item is removed from cart
     };
 
     await t
