@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "testcafe",
-    "test-auth": "testcafe --fixture-meta type=auth"
+    "test-auth": "testcafe --fixture-meta type=auth",
+    "test-cart": "testcafe --fixture-meta type=cart"
   },
   "author": "gerardo alvarez muñoz",
   "license": "ISC",
